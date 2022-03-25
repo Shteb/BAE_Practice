@@ -41,14 +41,14 @@ string four(int burpLen)
     return burpOut;
 }
 
-vector<int> five(vector<int> vectIn)
+vector<int> five(vector<int> vectorIn)
 {
-    for (int i = 0; i < vectIn.size(); i++)
+    for (int i = 0; i < vectorIn.size(); i++)
     {
-        if (vectIn[i] % 2 != 0)
+        if (vectorIn[i] % 2 != 0)
         {
-            vectIn.erase(vectIn.begin() + i);
+            vectorIn.erase(vectorIn.begin() + i);
         }
     }
-    return vectIn;
+    return vectorIn;
 }
