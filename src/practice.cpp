@@ -1,9 +1,11 @@
 #include "practice.h"
 #include <iostream>
 #include <string>
+#include <vector>
 using std::cin;
 using std::cout;
 using std::string;
+using std::vector;
 
 int one(int num1, int num2)
 {
@@ -37,4 +39,16 @@ string four(int burpLen)
     }
     burpOut.push_back('p');
     return burpOut;
+}
+
+vector<int> five(vector<int> vectIn)
+{
+    for (int i = 0; i < vectIn.size(); i++)
+    {
+        if (vectIn[i] % 2 != 0)
+        {
+            vectIn.erase(vectIn.begin() + i);
+        }
+    }
+    return vectIn;
 }

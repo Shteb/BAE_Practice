@@ -1,15 +1,18 @@
 #include "practice.h"
 #include <iostream>
 #include <string>
+#include <vector>
 using std::cin;
 using std::cout;
 using std::string;
+using std::vector;
 
 int main()
 {
     int playerInput, intIn1, intIn2;
     float floatIn1, floatIn2;
     string stringIn;
+    vector<int> vectIntIn, vectIntDone;
     cout << "Hello!\n\n";
     while (true)
     {
@@ -43,6 +46,25 @@ int main()
             cout << "This will return a burp of length proportional to an integer you enter.\nPlease enter a positive integer: ";
             cin >> intIn1;
             cout << four(intIn1) << ". Do excuse my manners.\n\n";
+            break;
+        case 5:
+            vectIntIn.clear();
+            cout << "This will return a vector of integers back to you, sans the odd numbers.\nPlease input the length of the vector you'd like: ";
+            cin >> intIn1;
+            for (int i = 0; i < intIn1; i++)
+            {
+                int tmp;
+                cout << "Please enter element no." << i + 1 << ": ";
+                cin >> tmp;
+                vectIntIn.push_back(tmp);
+            }
+            vectIntDone = five(vectIntIn);
+            cout << "\nYour vector is now: ";
+            for (int i = 0; i < vectIntDone.size() - 1; i++)
+            {
+                cout << vectIntDone[i] << ", ";
+            }
+            cout << vectIntDone[vectIntDone.size() - 1] << ".\n\n";
             break;
         default:
             cout << "Please enter a valid number.\n";
