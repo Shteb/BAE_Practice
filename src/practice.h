@@ -10,4 +10,6 @@ int one(int i_num1, int i_num2);
 
 float two(float triBase, float triHeight);
 
-void three();
+string three(string stringIn);
+
+string four(int burpLen);
