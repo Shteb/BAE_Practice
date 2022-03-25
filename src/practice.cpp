@@ -5,9 +5,9 @@ using std::cin;
 using std::cout;
 using std::string;
 
-void one()
+int one(int num1, int num2)
 {
-    cout << "test write for one.cpp\n";
+    return num1 % num2;
 }
 
 void two()
