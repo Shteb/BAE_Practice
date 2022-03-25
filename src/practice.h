@@ -8,6 +8,6 @@ using std::string;
 
 int one(int i_num1, int i_num2);
 
-void two();
+float two(float triBase, float triHeight);
 
 void three();

@@ -10,9 +10,9 @@ int one(int num1, int num2)
     return num1 % num2;
 }
 
-void two()
+float two(float triBase, float triHeight)
 {
-    cout << "Test write for two.cpp\n";
+    return (triBase * triHeight) / 2;
 }
 
 void three()
