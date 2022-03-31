@@ -98,6 +98,7 @@ int main()
                 cout << vectIntDone[i] << ", ";
             }
             cout << vectIntDone[vectIntDone.size() - 1] << ".\n\n";
+            break;
         }
         default:
             cout << "Please enter a valid number.\n";
