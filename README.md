@@ -7,4 +7,5 @@ Hello! This is a console app that contains the practice exercises completed in m
 3 - Partial string hashing  
 4 - Custom burper  
 5 - Odd number remover  
-6 - Dash segment counter
+6 - Dash segment counter  
+7 - Fibonacci sequence
