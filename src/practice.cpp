@@ -52,3 +52,16 @@ vector<int> five(vector<int> vectIn)
     }
     return vectIn;
 }
+
+int six(string wordIn)
+{
+    int dashCount = 0;
+    for (char &c : wordIn)
+    {
+        if (c == '-')
+        {
+            dashCount++;
+        }
+    }
+    return ++dashCount;
+}

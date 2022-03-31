@@ -17,3 +17,5 @@ string three(string stringIn);
 string four(int burpLen);
 
 vector<int> five(vector<int> vectIn);
+
+int six(string wordIn);
