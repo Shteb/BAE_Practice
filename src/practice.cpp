@@ -69,8 +69,7 @@ int six(string wordIn)
 vector<int> seven(int toFib)
 {
     vector<int> fib{0, 1};
-    int i = 2;
-    return fibRecursive(fib, i, toFib);
+    return fibRecursive(fib, 2, toFib);
 }
 
 vector<int> fibRecursive(vector<int> fibIn, int counter, int fibMax)
