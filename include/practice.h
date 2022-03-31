@@ -19,3 +19,7 @@ string four(int burpLen);
 vector<int> five(vector<int> vectIn);
 
 int six(string wordIn);
+
+vector<int> seven(int toFib);
+
+vector<int> fibRecursive(vector<int> fibIn, int counter, int fibMax);

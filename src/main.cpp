@@ -18,7 +18,7 @@ int main()
     cout << "Hello!\n\n";
     while (true)
     {
-        cout << "\nPlease input a number for the practise you'd like to run:\n[1] Remainder calculator\n[2] Triangle surface area\n[3] Partial string hash\n[4] Burp generator\n[5] Odd number remover\n[6] Dash counter\n";
+        cout << "\nPlease input a number for the practise you'd like to run:\n[1] Remainder calculator\n[2] Triangle surface area\n[3] Partial string hash\n[4] Burp generator\n[5] Odd number remover\n[6] Dash counter\n[7] Fibonacci generator\n";
         cin >> playerInput;
         switch (playerInput)
         {
@@ -86,6 +86,18 @@ int main()
             cin >> stringIn;
             cout << "There are " << six(stringIn) << " segments to your string when separated by dash.\n";
             break;
+        }
+        case 7:
+        {
+            cout << "This will return and print the fibonachi sequence to a number of digits specified, minimum 2.\nPlease input the number of digits you would like to output: ";
+            cin >> intIn1;
+            vectIntDone = seven(intIn1);
+            cout << "Your fibonacci sequence is: ";
+            for (int i = 0; i < vectIntDone.size() - 1; i++)
+            {
+                cout << vectIntDone[i] << ", ";
+            }
+            cout << vectIntDone[vectIntDone.size() - 1] << ".\n\n";
         }
         default:
             cout << "Please enter a valid number.\n";
