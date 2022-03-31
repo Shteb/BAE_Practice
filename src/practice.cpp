@@ -70,19 +70,15 @@ vector<int> seven(int toFib)
 {
     vector<int> fib{0, 1};
     int i = 2;
-    return fibRecursive(fib, i, toFib - 2);
+    return fibRecursive(fib, i, toFib);
 }
 
 vector<int> fibRecursive(vector<int> fibIn, int counter, int fibMax)
 {
-    if (counter >= fibMax)
+    if (counter < fibMax)
     {
-        return fibIn;
-    }
-    else
-    {
-        int toAppend = fibIn[counter - 1] + fibIn[counter - 2];
-        fibIn.push_back(toAppend);
+        fibIn.push_back(fibIn[counter - 1] + fibIn[counter - 2]);
         return (fibRecursive(fibIn, ++counter, fibMax));
     }
+    return fibIn;
 }
