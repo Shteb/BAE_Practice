@@ -1,4 +1,4 @@
-#include "practice.h"
+#include "../include/practice.h"
 #include <iostream>
 #include <string>
 #include <vector>
@@ -6,6 +6,8 @@ using std::cin;
 using std::cout;
 using std::string;
 using std::vector;
+
+// g++ -o main.exe main.cpp practice.cpp
 
 int main()
 {
