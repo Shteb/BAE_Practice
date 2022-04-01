@@ -23,3 +23,5 @@ int countSegmentByDash(string wordIn);
 vector<int> fibonacciGen(int toFib);
 
 vector<int> fibRecursive(vector<int> fibIn, int counter, int fibMax);
+
+int dotTriangle(int triHeight);

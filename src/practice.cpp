@@ -81,3 +81,13 @@ vector<int> fibRecursive(vector<int> fibIn, int counter, int fibMax)
     }
     return fibIn;
 }
+
+int dotTriangle(int triHeight)
+{
+    int dotCount = 0;
+    for (int i = 1; i <= triHeight; i++)
+    {
+        dotCount += i;
+    }
+    return dotCount;
+}

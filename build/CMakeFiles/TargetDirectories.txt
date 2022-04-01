@@ -1,3 +1,0 @@
-H:/Documents/BAE Training/BAE C++ Practise/Practice/build/CMakeFiles/PracticeTerm.dir
-H:/Documents/BAE Training/BAE C++ Practise/Practice/build/CMakeFiles/edit_cache.dir
-H:/Documents/BAE Training/BAE C++ Practise/Practice/build/CMakeFiles/rebuild_cache.dir
