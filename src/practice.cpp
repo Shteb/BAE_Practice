@@ -7,17 +7,17 @@ using std::cout;
 using std::string;
 using std::vector;
 
-int one(int num1, int num2)
+int moduloFunc(int num1, int num2)
 {
     return num1 % num2;
 }
 
-float two(float triBase, float triHeight)
+float triangleArea(float triBase, float triHeight)
 {
     return (triBase * triHeight) / 2;
 }
 
-string three(string stringIn)
+string partHash(string stringIn)
 {
     int strInLen = stringIn.length();
     int i = 0;
@@ -30,7 +30,7 @@ string three(string stringIn)
     return stringIn;
 }
 
-string four(int burpLen)
+string burpGen(int burpLen)
 {
     string burpOut = "Bu";
     for (int i = 0; i < burpLen; i++)
@@ -41,7 +41,7 @@ string four(int burpLen)
     return burpOut;
 }
 
-vector<int> five(vector<int> vectIn)
+vector<int> removeOddsFromVect(vector<int> vectIn)
 {
     for (int i = 0; i < vectIn.size(); i++)
     {
@@ -53,7 +53,7 @@ vector<int> five(vector<int> vectIn)
     return vectIn;
 }
 
-int six(string wordIn)
+int countSegmentByDash(string wordIn)
 {
     int dashCount = 0;
     for (char &c : wordIn)
@@ -66,7 +66,7 @@ int six(string wordIn)
     return ++dashCount;
 }
 
-vector<int> seven(int toFib)
+vector<int> fibonacciGen(int toFib)
 {
     vector<int> fib{0, 1};
     return fibRecursive(fib, 2, toFib);

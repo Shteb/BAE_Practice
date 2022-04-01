@@ -33,7 +33,7 @@ int main()
             cin >> intIn1;
             cout << "Please input your second number: ";
             cin >> intIn2;
-            cout << "The remainder of those two is " << one(intIn1, intIn2) << ".\n\n";
+            cout << "The remainder of those two is " << moduloFunc(intIn1, intIn2) << ".\n\n";
             break;
         }
         case 2:
@@ -42,21 +42,21 @@ int main()
             cin >> floatIn1;
             cout << "Please input the width: ";
             cin >> floatIn2;
-            cout << "The area is " << two(floatIn1, floatIn2) << " units square.\n\n";
+            cout << "The area is " << triangleArea(floatIn1, floatIn2) << " units square.\n\n";
             break;
         }
         case 3:
         {
             cout << "This will hash all but the last 4 characters of your input, somewhat like a bank card number.\nPlease input a string of any given length to hash: ";
             cin >> stringIn;
-            cout << "Your hashed string is " << three(stringIn) << ".\n\n";
+            cout << "Your hashed string is " << partHash(stringIn) << ".\n\n";
             break;
         }
         case 4:
         {
             cout << "This will return a burp of length proportional to an integer you enter.\nPlease enter a positive integer: ";
             cin >> intIn1;
-            cout << four(intIn1) << ". Do excuse my manners.\n\n";
+            cout << burpGen(intIn1) << ". Do excuse my manners.\n\n";
             break;
         }
         case 5:
@@ -71,7 +71,7 @@ int main()
                 cin >> tmp;
                 vectIntIn.push_back(tmp);
             }
-            vectIntDone = five(vectIntIn);
+            vectIntDone = removeOddsFromVect(vectIntIn);
             cout << "\nYour vector is now: ";
             for (int i = 0; i < vectIntDone.size() - 1; i++)
             {
@@ -84,14 +84,14 @@ int main()
         {
             cout << "This will return the number of dashes in a string given.\nPlease input a word with it separated by dashs: ";
             cin >> stringIn;
-            cout << "There are " << six(stringIn) << " segments to your string when separated by dash.\n";
+            cout << "There are " << countSegmentByDash(stringIn) << " segments to your string when separated by dash.\n";
             break;
         }
         case 7:
         {
             cout << "This will return and print the fibonachi sequence to a number of digits specified, minimum 2.\nPlease input the number of digits you would like to output: ";
             cin >> intIn1;
-            vectIntDone = seven(intIn1);
+            vectIntDone = fibonacciGen(intIn1);
             cout << "Your fibonacci sequence is: ";
             for (int i = 0; i < vectIntDone.size() - 1; i++)
             {
