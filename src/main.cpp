@@ -1,4 +1,5 @@
 #include "../include/practice.h"
+#include "../include/dog.h"
 #include <iostream>
 #include <string>
 #include <vector>
@@ -8,28 +9,6 @@ using std::string;
 using std::vector;
 
 // g++ -o main.exe main.cpp practice.cpp
-
-class dog
-{
-public:
-    string breedName;
-    string furColour;
-    int barkVolume;
-
-    void bark(int barkCount)
-    {
-        for (int i = 0; i < barkCount; i++)
-        {
-            cout << "bork ";
-        }
-        cout << "\n";
-    }
-
-    void run()
-    {
-        cout << "\"The dog borks with great velocity. Incredible.\n";
-    }
-};
 
 int main()
 {
