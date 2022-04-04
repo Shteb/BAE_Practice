@@ -5,9 +5,13 @@ using std::cin;
 using std::cout;
 using std::string;
 
-void dog::bark(int barkCount)
+dog::dog(int barkVolumeIn) {
+    barkVolume = barkVolumeIn;
+}
+
+void dog::bark()
 {
-    for (int i = 0; i < barkCount; i++)
+    for (int i = 0; i < barkVolume; i++)
     {
         cout << "bork ";
     }

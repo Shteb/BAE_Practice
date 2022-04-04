@@ -6,12 +6,14 @@ using std::string;
 
 class dog
 {
-public:
     string breedName;
     string furColour;
     int barkVolume;
+public:
 
-    void bark(int barkCount);
+    dog(int barkVolumeIn);
+
+    void bark();
 
     void run();
 };

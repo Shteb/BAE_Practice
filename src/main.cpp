@@ -110,10 +110,10 @@ int main()
         }
         case 9:
         {
-            dog myDog;
             cout << "This will perform some simple couts as defined by the class dog in dog.cpp.\nPlease input how many barks you'd like from our good boy: ";
             cin >> intIn1;
-            myDog.bark(intIn1);
+            dog myDog(intIn1);
+            myDog.bark();
             break;
         }
         default:
