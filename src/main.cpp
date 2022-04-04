@@ -9,6 +9,28 @@ using std::vector;
 
 // g++ -o main.exe main.cpp practice.cpp
 
+class dog
+{
+public:
+    string breedName;
+    string furColour;
+    int barkVolume;
+
+    void bark(int barkCount)
+    {
+        for (int i = 0; i < barkCount; i++)
+        {
+            cout << "bork ";
+        }
+        cout << "\n";
+    }
+
+    void run()
+    {
+        cout << "\"The dog borks with great velocity. Incredible.\n";
+    }
+};
+
 int main()
 {
     int playerInput, intIn1, intIn2;
@@ -18,7 +40,7 @@ int main()
     cout << "Hello!\n\n";
     while (true)
     {
-        cout << "\nPlease input a number for the practise you'd like to run:\n[1] Remainder calculator\n[2] Triangle surface area\n[3] Partial string hash\n[4] Burp generator\n[5] Odd number remover\n[6] Dash counter\n[7] Fibonacci generator\n[8] Dot triangle calculator\n";
+        cout << "\nPlease input a number for the practise you'd like to run:\n[1] Remainder calculator\n[2] Triangle surface area\n[3] Partial string hash\n[4] Burp generator\n[5] Odd number remover\n[6] Dash counter\n[7] Fibonacci generator\n[8] Dot triangle calculator\n[9] Doggy class demo\n";
         cin >> playerInput;
         switch (playerInput)
         {
@@ -105,6 +127,14 @@ int main()
             cout << "This will return the number of dots in a triangle of a given number of layers.\nPlease input the height of the triangle you want: ";
             cin >> intIn1;
             cout << "Your triangle has " << dotTriangle(intIn1) << " dots in it.\n";
+            break;
+        }
+        case 9:
+        {
+            dog myDog;
+            cout << "This will perform some simple couts as defined by the class dog in dog.cpp.\nPlease input how many barks you'd like from our good boy: ";
+            cin >> intIn1;
+            myDog.bark(intIn1);
             break;
         }
         default:
