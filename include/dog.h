@@ -10,8 +10,13 @@ class dog
     string furColour;
     int barkVolume;
 public:
+    dog();
 
     dog(int barkVolumeIn);
+
+    void setBarkVolume(int barkVolumeIn);
+
+    int getBarkVolume();
 
     void bark();
 

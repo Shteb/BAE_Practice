@@ -5,8 +5,20 @@ using std::cin;
 using std::cout;
 using std::string;
 
+dog::dog() {
+    barkVolume = 3;
+}
+
 dog::dog(int barkVolumeIn) {
     barkVolume = barkVolumeIn;
+}
+
+void dog::setBarkVolume(int barkVolumeIn) {
+    barkVolume = barkVolumeIn;
+}
+
+int dog::getBarkVolume() {
+    return barkVolume;
 }
 
 void dog::bark()
