@@ -114,6 +114,10 @@ int main()
             cin >> intIn1;
             dog myDog(intIn1);
             myDog.bark();
+            cout << "\nThis demonstrates the use of inheritance in the example of a dog inheriting the ability to chase from the quadroped class.\nPlease input how fast you'd like the dog to give chase: ";
+            cin >> intIn2;
+            myDog.setRunSpeed(intIn2);
+            myDog.chase();
             break;
         }
         default:

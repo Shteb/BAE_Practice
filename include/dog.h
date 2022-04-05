@@ -1,10 +1,11 @@
 #pragma once
 
 #include <string>
+#include "quadroped.h"
 using std::string;
 
 
-class dog
+class dog : public quadroped
 {
     string breedName;
     string furColour;
