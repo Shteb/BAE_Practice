@@ -10,6 +10,6 @@ project(PracticeTerm VERSION 1.0)
 
 #include_directories(src)
 
-add_executable(${PROJECT_NAME} src/main.cpp src/practice.cpp src/dog.cpp src/quadroped.cpp)
+add_executable(${PROJECT_NAME} src/main.cpp src/practice.cpp src/dog.cpp src/quadroped.cpp src/farming.cpp)
 
 target_Compile_features(${PROJECT_NAME} PUBLIC cxx_std_20)

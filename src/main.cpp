@@ -19,7 +19,7 @@ int main()
     cout << "Hello!\n\n";
     while (true)
     {
-        cout << "\nPlease input a number for the practise you'd like to run:\n[1] Remainder calculator\n[2] Triangle surface area\n[3] Partial string hash\n[4] Burp generator\n[5] Odd number remover\n[6] Dash counter\n[7] Fibonacci generator\n[8] Dot triangle calculator\n[9] Doggy class demo\n";
+        cout << "\nPlease input a number for the practise you'd like to run:\n[0] Quit\n[1] Remainder calculator\n[2] Triangle surface area\n[3] Partial string hash\n[4] Burp generator\n[5] Odd number remover\n[6] Dash counter\n[7] Fibonacci generator\n[8] Dot triangle calculator\n[9] Doggy class demo\n[10] Console farming simulator\n";
         cin >> playerInput;
         switch (playerInput)
         {
@@ -118,6 +118,11 @@ int main()
             cin >> intIn2;
             myDog.setRunSpeed(intIn2);
             myDog.chase();
+            break;
+        }
+        case 10:
+        {
+
             break;
         }
         default:
